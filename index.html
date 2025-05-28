@@ -18,8 +18,8 @@
         }
 
         .table-container {
-            max-width: 100%;
-            overflow-x: auto;
+            max-height: 80vh;
+            overflow-y: auto;
             background-color: #1e1e1e;
             padding: 20px;
             box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
@@ -43,6 +43,13 @@
             color: white;
         }
 
+        thead th {
+            position: sticky;
+            top: 0;
+            background-color: #ff0000;
+            z-index: 2;
+        }
+
         img {
             width: 300px;
             height: auto;
@@ -57,6 +64,16 @@
             text-decoration: underline;
             color: #ffffff;
         }
+
+        tfoot td {
+            font-weight: bold;
+            font-size: 18px;
+            background-color: #222;
+        }
+
+        .total-label {
+            text-align: right;
+        }
     </style>
 </head>
 
@@ -64,7 +81,7 @@
 
     <div class="table-container">
         <h2 style="text-align: center; font-family:Honk; font-size:50px;">PC Build and Accessories</h2>
-        <table>
+        <table id="pcTable">
             <thead>
                 <tr>
                     <th>PC Part</th>
@@ -123,6 +140,13 @@
                     <td><img src="https://i.imgur.com/bUMAZeE.png" alt="PSU"></td>
                     <td>₱3,295.00</td>
                     <td><a href="https://ecommerce.datablitz.com.ph/products/corsair-cx-series-cx650-650w-80-bronze-atx-power-supply" target="_blank">Buy Here</a></td>
+                </tr>
+                <tr>
+                    <td>CASE</td>
+                    <td>DarkFlash C285P</td>
+                    <td><img src="https://i.imgur.com/KbTpRVL.png" alt="CASE"></td>
+                    <td>₱2,650.00</td>
+                    <td><a href="https://easypc.com.ph/products/darkflash-c285p-atx-tempered-glass-side-panel-gaming-pc-case-black" target="_blank">Buy Here</a></td>
                 </tr>
                 <tr>
                     <td>FANS</td>
@@ -195,8 +219,41 @@
                     <td><a href="https://easypc.com.ph/products/gamdias-daedalus-e1-gaming-table" target="_blank">Buy Here</a></td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="total-label">Total Price:</td>
+                    <td id="totalPrice">₱0.00</td>
+                    <td></td>
+                </tr>
+            </tfoot>
         </table>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const rows = document.querySelectorAll("#pcTable tbody tr");
+            let total = 0;
+
+            rows.forEach(row => {
+                const priceCell = row.querySelector("td:nth-child(4)");
+                if (priceCell) {
+                    const priceText = priceCell.textContent.replace(/[^\d.]/g, '');
+                    const price = parseFloat(priceText);
+                    if (!isNaN(price)) {
+                        total += price;
+                    }
+                }
+            });
+
+            const formattedTotal = total.toLocaleString("en-PH", {
+                style: "currency",
+                currency: "PHP",
+                minimumFractionDigits: 2
+            });
+
+            document.getElementById("totalPrice").textContent = formattedTotal;
+        });
+    </script>
 
 </body>
 
