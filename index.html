@@ -75,9 +75,25 @@
             font-size: 18px;
             background-color: #222;
         }
-
+        .placeholder-text {
+            color: #ff4d4d;
+            font-style: italic;
+            display: block;
+            margin-bottom: 5px;
+        }
         .total-label {
             text-align: right;
+        }
+        .toggle-image {
+            display: none;
+        }
+        .image-container {
+            text-align: center;
+        }
+
+        img.toggle-image {
+            display: none;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -96,134 +112,225 @@
                     <th>Purchase Link</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>MOTHERBOARD</td>
-                    <td>ROG STRIX B550-F GAMING</td>
-                    <td><img src="https://dlcdnimgs.asus.com/websites/global/products/sungf6uyly9xh7h9/img/kv/pd.png" alt="MOTHERBOARD"></td>
-                    <td>₱11,695.00</td>
-                    <td><a href="https://bermorzone.com.ph/shop/motherboard/asus-rog-strix-b550-f-gaming-wifi/" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>CPU</td>
-                    <td>RYZEN 7 5700X</td>
-                    <td><img src="https://i.imgur.com/IzLhUEf.png" alt="CPU"></td>
-                    <td>₱10,995.00</td>
-                    <td><a href="https://ecommerce.datablitz.com.ph/products/amd-ryzen-7-5700x-processor" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>GPU</td>
-                    <td>ASUS TUF RTX 3070</td>
-                    <td><img src="https://dlcdnwebimgs.asus.com/gain/8bf028c8-bb60-4762-ae08-a1f8db1959ff/" alt="GPU"></td>
-                    <td>₱16,000.00</td>
-                    <td><a href="https://www.facebook.com/jay.siacamargo.18" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>AIO</td>
-                    <td>ID COOLING SPACE LCD 360MM</td>
-                    <td><img src="https://i.imgur.com/JPTfB8M.png" alt="AIO"></td>
-                    <td>₱7,100.00</td>
-                    <td><a href="https://easypc.com.ph/products/id-cooling-space-lcd-sl360-aio-liquid-cooling-black" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>RAM</td>
-                    <td>TFORCE DELTA 2x16GB</td>
-                    <td><img src="https://i.imgur.com/rVJKafn.png" alt="RAM"></td>
-                    <td>₱3,950.00</td>
-                    <td><a href="https://bermorzone.com.ph/shop/memory-modules/teamgroup-tforce-delta-tuf-rgb-ddr4-32gb-2x16gb-3200mhz-cl16-desktop-gaming-memory/" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>NVME</td>
-                    <td>CRUCIAL 1TB</td>
-                    <td><img src="https://netcodex.ph/wp-content/uploads/2024/05/crucial-t500-m2-ssd-internal.jpg" alt="NVME"></td>
-                    <td>₱3,895.00</td>
-                    <td><a href="https://dynaquestpc.com/products/crucial-p3-plus-m-2-1tb-nvme-gen4-ssd-ct1000p3pssd8" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>PSU</td>
-                    <td>CORSAIR CV650</td>
-                    <td><img src="https://i.imgur.com/bUMAZeE.png" alt="PSU"></td>
-                    <td>₱3,295.00</td>
-                    <td><a href="https://ecommerce.datablitz.com.ph/products/corsair-cx-series-cx650-650w-80-bronze-atx-power-supply" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>CASE</td>
-                    <td>DarkFlash C285P</td>
-                    <td><img src="https://i.imgur.com/KbTpRVL.png" alt="CASE"></td>
-                    <td>₱2,650.00</td>
-                    <td><a href="https://easypc.com.ph/products/darkflash-c285p-atx-tempered-glass-side-panel-gaming-pc-case-black" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>FANS</td>
-                    <td>THERMALRIGHT TL-S12</td>
-                    <td><img src="https://i.imgur.com/ZcVpxjS.png" alt="FANS"></td>
-                    <td>₱1,227.00</td>
-                    <td><a href="https://www.lazada.com.ph/products/thermalright-tl-s12-w-x3-case-fan-4pin-pwm-120mm-cpu-cooling-fan-1500rpm-shenguang-synchronous-tl-s12-s-5v-3pin-argb-aperture-chassis-fan-i3830522889.html" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>MONITOR</td>
-                    <td>MSI G255F 180HZ 24”</td>
-                    <td><img src="https://i.imgur.com/A5oE0fX.png" alt="MONITOR"></td>
-                    <td>₱7,135.00</td>
-                    <td><a href="https://easypc.com.ph/products/msi-g255f-24-5-180hz-1ms-fhd-rapid-ips-gaming-monitor" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>KEYBOARD</td>
-                    <td>AULA F75</td>
-                    <td><img src="https://i.imgur.com/zOVJm99.png" alt="KEYBOARD"></td>
-                    <td>₱2,999.00</td>
-                    <td><a href="https://shopee.ph/Aula-F75-Mechanical-Keyboard-80-Key-with-Gasket-Structure-75-Layout-Full-key-Hot-Swap-Three-mode-Bluetooth-for-Gaming-Office-i.479010777.22889710615" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>MOUSE</td>
-                    <td>ATTACKSHARK X6</td>
-                    <td><img src="https://i.imgur.com/6hVo4mH.png" alt="MOUSE"></td>
-                    <td>₱1,999.00</td>
-                    <td><a href="https://www.lazada.com.ph/products/attack-shark-x6-paw3395-tri-mode-wireless-mouse-charging-rgb-base-gaming-mouse-software-customization-26000-dpi-i4273934797-s23923793200.html?from_gmc=1" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>HEADSET</td>
-                    <td>RAZER BLACKSHARK V2X</td>
-                    <td><img src="https://i.imgur.com/1Opjq0j.png" alt="HEADSET"></td>
-                    <td>₱2,190.00</td>
-                    <td><a href="https://ecommerce.datablitz.com.ph/products/razer-blackshark-v2-x-multi-platform-wired-esports-headset-pc-mac-ps4-xb1-smartphone-black" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>SPEAKER</td>
-                    <td>REDRAGON ANVIL</td>
-                    <td><img src="https://i.imgur.com/q2qPYbn.png" alt="SPEAKER"></td>
-                    <td>₱955.00</td>
-                    <td><a href="https://shopee.ph/Redragon-GS520-Anvil-RGB-Desktop-Speakers-2.0-Channel-PC-Computer-Stereo-Speaker-with-6-Colorful-LED-i.89683872.12418223190?sp_atk=aff92f58-1741-4aab-90d5-6dafba3c542f&xptdk=aff92f58-1741-4aab-90d5-6dafba3c542f&is_from_login=true" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>UPS</td>
-                    <td>APC BV1000I-MS 1000VA</td>
-                    <td><img src="https://i.imgur.com/yuIxyIE.png" alt="UPS"></td>
-                    <td>₱4,995.00</td>
-                    <td><a href="https://dynaquestpc.com/products/apc-bv1000i-ms-1000va-600w-230v-avr" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>CAMERA</td>
-                    <td>RAPOO CAM</td>
-                    <td><img src="https://i.imgur.com/Ysp4jXN.png" alt="CAMERA"></td>
-                    <td>₱1,597.00</td>
-                    <td><a href="https://shopee.ph/Rapoo-C280-Webcam-2K-HD-With-USB2.0-With-Mic-Rotatable-Cameras-For-Live-Broadcast-Video-Calling-Conference-With-Cover-i.391056169.8031321595" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>GAMING CHAIR</td>
-                    <td>RAKK DISNA</td>
-                    <td><img src="https://i.imgur.com/DLtPk9N.png" alt="GAMING CHAIR"></td>
-                    <td>₱2,995.00</td>
-                    <td><a href="https://easypc.com.ph/products/rakk-disna-gaming-chair-black-gray" target="_blank">Buy Here</a></td>
-                </tr>
-                <tr>
-                    <td>GAMING TABLE</td>
-                    <td>GAMDIAS DAEDALUS E1</td>
-                    <td><img src="https://www.gamdias.com/img/desk/DAEDALUS_E1/DAEDALUS_E1_Slogan.png" alt="GAMING TABLE"></td>
-                    <td>₱5,000.00</td>
-                    <td><a href="https://easypc.com.ph/products/gamdias-daedalus-e1-gaming-table" target="_blank">Buy Here</a></td>
-                </tr>
-            </tbody>
+<tbody>
+    <tr>
+        <td>MOTHERBOARD</td>
+        <td>ROG STRIX B550-F GAMING</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://dlcdnimgs.asus.com/websites/global/products/sungf6uyly9xh7h9/img/kv/pd.png" alt="MOTHERBOARD" style="display: none;">
+            </div>
+        </td>
+        <td>₱11,695.00</td>
+        <td><a href="https://bermorzone.com.ph/shop/motherboard/asus-rog-strix-b550-f-gaming-wifi/" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>CPU</td>
+        <td>RYZEN 7 5700X</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/IzLhUEf.png" alt="CPU" style="display: none;">
+            </div>
+        </td>
+        <td>₱10,995.00</td>
+        <td><a href="https://ecommerce.datablitz.com.ph/products/amd-ryzen-7-5700x-processor" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>GPU</td>
+        <td>ASUS TUF RTX 3070</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://dlcdnwebimgs.asus.com/gain/8bf028c8-bb60-4762-ae08-a1f8db1959ff/" alt="GPU" style="display: none;">
+            </div>
+        </td>
+        <td>₱16,000.00</td>
+        <td><a href="https://www.facebook.com/jay.siacamargo.18" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>AIO</td>
+        <td>ID COOLING SPACE LCD 360MM</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/JPTfB8M.png" alt="AIO" style="display: none;">
+            </div>
+        </td>
+        <td>₱7,100.00</td>
+        <td><a href="https://easypc.com.ph/products/id-cooling-space-lcd-sl360-aio-liquid-cooling-black" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>RAM</td>
+        <td>TFORCE DELTA 2x16GB</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/rVJKafn.png" alt="RAM" style="display: none;">
+            </div>
+        </td>
+        <td>₱3,950.00</td>
+        <td><a href="https://bermorzone.com.ph/shop/memory-modules/teamgroup-tforce-delta-tuf-rgb-ddr4-32gb-2x16gb-3200mhz-cl16-desktop-gaming-memory/" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>NVME</td>
+        <td>CRUCIAL 1TB</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://netcodex.ph/wp-content/uploads/2024/05/crucial-t500-m2-ssd-internal.jpg" alt="NVME" style="display: none;">
+            </div>
+        </td>
+        <td>₱3,895.00</td>
+        <td><a href="https://dynaquestpc.com/products/crucial-p3-plus-m-2-1tb-nvme-gen4-ssd-ct1000p3pssd8" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>PSU</td>
+        <td>CORSAIR CV650</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/bUMAZeE.png" alt="PSU" style="display: none;">
+            </div>
+        </td>
+        <td>₱3,295.00</td>
+        <td><a href="https://ecommerce.datablitz.com.ph/products/corsair-cx-series-cx650-650w-80-bronze-atx-power-supply" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>CASE</td>
+        <td>DarkFlash C285P</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/KbTpRVL.png" alt="CASE" style="display: none;">
+            </div>
+        </td>
+        <td>₱2,650.00</td>
+        <td><a href="https://easypc.com.ph/products/darkflash-c285p-atx-tempered-glass-side-panel-gaming-pc-case-black" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>FANS</td>
+        <td>THERMALRIGHT TL-S12</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/ZcVpxjS.png" alt="FANS" style="display: none;">
+            </div>
+        </td>
+        <td>₱1,227.00</td>
+        <td><a href="https://www.lazada.com.ph/products/thermalright-tl-s12-w-x3-case-fan-4pin-pwm-120mm-cpu-cooling-fan-1500rpm-shenguang-synchronous-tl-s12-s-5v-3pin-argb-aperture-chassis-fan-i3830522889.html" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>MONITOR</td>
+        <td>MSI G255F 180HZ 24”</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/A5oE0fX.png" alt="MONITOR" style="display: none;">
+            </div>
+        </td>
+        <td>₱7,135.00</td>
+        <td><a href="https://easypc.com.ph/products/msi-g255f-24-5-180hz-1ms-fhd-rapid-ips-gaming-monitor" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>KEYBOARD</td>
+        <td>AULA F75</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/zOVJm99.png" alt="KEYBOARD" style="display: none;">
+            </div>
+        </td>
+        <td>₱2,999.00</td>
+        <td><a href="https://shopee.ph/Aula-F75-Mechanical-Keyboard-80-Key-with-Gasket-Structure-75-Layout-Full-key-Hot-Swap-Three-mode-Bluetooth-for-Gaming-Office-i.479010777.22889710615" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>MOUSE</td>
+        <td>ATTACKSHARK X6</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/6hVo4mH.png" alt="MOUSE" style="display: none;">
+            </div>
+        </td>
+        <td>₱1,999.00</td>
+        <td><a href="https://www.lazada.com.ph/products/attack-shark-x6-paw3395-tri-mode-wireless-mouse-charging-rgb-base-gaming-mouse-software-customization-26000-dpi-i4273934797-s23923793200.html?from_gmc=1" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>HEADSET</td>
+        <td>RAZER BLACKSHARK V2X</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/1Opjq0j.png" alt="HEADSET" style="display: none;">
+            </div>
+        </td>
+        <td>₱2,190.00</td>
+        <td><a href="https://ecommerce.datablitz.com.ph/products/razer-blackshark-v2-x-multi-platform-wired-esports-headset-pc-mac-ps4-xb1-smartphone-black" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>SPEAKER</td>
+        <td>REDRAGON ANVIL</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/q2qPYbn.png" alt="SPEAKER" style="display: none;">
+            </div>
+        </td>
+        <td>₱955.00</td>
+        <td><a href="https://shopee.ph/Redragon-GS520-Anvil-RGB-Desktop-Speakers-2.0-Channel-PC-Computer-Stereo-Speaker-with-6-Colorful-LED-i.89683872.12418223190" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>UPS</td>
+        <td>APC BV1000I-MS 1000VA</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/yuIxyIE.png" alt="UPS" style="display: none;">
+            </div>
+        </td>
+        <td>₱4,995.00</td>
+        <td><a href="https://dynaquestpc.com/products/apc-bv1000i-ms-1000va-600w-230v-avr" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>CAMERA</td>
+        <td>RAPOO CAM</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/Ysp4jXN.png" alt="CAMERA" style="display: none;">
+            </div>
+        </td>
+        <td>₱1,597.00</td>
+        <td><a href="https://shopee.ph/Rapoo-C280-Webcam-2K-HD-With-USB2.0-With-Mic-Rotatable-Cameras-For-Live-Broadcast-Video-Calling-Conference-With-Cover-i.391056169.8031321595" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>GAMING CHAIR</td>
+        <td>RAKK DISNA</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://i.imgur.com/DLtPk9N.png" alt="GAMING CHAIR" style="display: none;">
+            </div>
+        </td>
+        <td>₱2,995.00</td>
+        <td><a href="https://easypc.com.ph/products/rakk-disna-gaming-chair-black-gray" target="_blank">Buy Here</a></td>
+    </tr>
+    <tr>
+        <td>GAMING TABLE</td>
+        <td>GAMDIAS DAEDALUS E1</td>
+        <td>
+            <div class="image-container">
+                <span class="placeholder-text">Click to see image</span>
+                <img class="toggle-image" src="https://www.gamdias.com/img/desk/DAEDALUS_E1/DAEDALUS_E1_Slogan.png" alt="GAMING TABLE" style="display: none;">
+            </div>
+        </td>
+        <td>₱5,000.00</td>
+        <td><a href="https://easypc.com.ph/products/gamdias-daedalus-e1-gaming-table" target="_blank">Buy Here</a></td>
+    </tr>
+</tbody>
+
             <tfoot>
                 <tr>
                     <td colspan="3" class="total-label">Total Price:</td>
@@ -232,34 +339,64 @@
                 </tr>
             </tfoot>
         </table>
+        <div style="text-align: center; margin-top: 15px;">
+          <button id="toggleImagesBtn">Show All Images</button>
+        </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const rows = document.querySelectorAll("#pcTable tbody tr");
-            let total = 0;
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const rows = document.querySelectorAll("#pcTable tbody tr");
+        let total = 0;
 
-            rows.forEach(row => {
-                const priceCell = row.querySelector("td:nth-child(4)");
-                if (priceCell) {
-                    const priceText = priceCell.textContent.replace(/[^\d.]/g, '');
-                    const price = parseFloat(priceText);
-                    if (!isNaN(price)) {
-                        total += price;
-                    }
+        // Calculate total price
+        rows.forEach(row => {
+            const priceCell = row.querySelector("td:nth-child(4)");
+            if (priceCell) {
+                const priceText = priceCell.textContent.replace(/[^\d.]/g, '');
+                const price = parseFloat(priceText);
+                if (!isNaN(price)) {
+                    total += price;
                 }
-            });
-
-            const formattedTotal = total.toLocaleString("en-PH", {
-                style: "currency",
-                currency: "PHP",
-                minimumFractionDigits: 2
-            });
-
-            document.getElementById("totalPrice").textContent = formattedTotal;
+            }
         });
-    </script>
+
+        // Format and display total
+        const formattedTotal = total.toLocaleString("en-PH", {
+            style: "currency",
+            currency: "PHP",
+            minimumFractionDigits: 2
+        });
+        document.getElementById("totalPrice").textContent = formattedTotal;
+
+        // Individual image toggle on placeholder click
+        document.querySelectorAll(".image-container").forEach(container => {
+            const placeholder = container.querySelector(".placeholder-text");
+            const image = container.querySelector("img");
+            placeholder.style.cursor = "pointer";
+            placeholder.addEventListener("click", () => {
+                const isVisible = image.style.display === "block";
+                image.style.display = isVisible ? "none" : "block";
+            });
+        });
+
+        // Global Show/Hide All Images button
+        const toggleBtn = document.getElementById("toggleImagesBtn");
+        let imagesShown = false;
+
+        toggleBtn.addEventListener("click", () => {
+            const allImages = document.querySelectorAll(".toggle-image");
+            allImages.forEach(img => {
+                img.style.display = imagesShown ? "none" : "block";
+            });
+            imagesShown = !imagesShown;
+            toggleBtn.textContent = imagesShown ? "Hide All Images" : "Show All Images";
+        });
+    });
+</script>
+
 
 </body>
+
 
 </html>
