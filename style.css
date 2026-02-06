@@ -152,3 +152,80 @@ button:hover {
     height: 18px;
     cursor: pointer;
 }
+
+.build-showcase {
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: center;
+    border-top: 2px solid #b3e5fc;
+    box-shadow: inset 0 10px 20px rgba(179, 229, 252, 0.6);
+}
+
+.build-showcase h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.2rem;
+    color: #0288d1;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #81d4fa;
+}
+
+.slider {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 0 25px #81d4fa, 0 0 40px #b3e5fc;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 16px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(2, 136, 209, 0.85);
+    color: #fff;
+    border: none;
+    font-size: 2.5rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #81d4fa;
+    transition: background 0.3s ease;
+    z-index: 2;
+}
+
+.slider-btn:hover {
+    background: #039be5;
+}
+
+.slider-btn.prev {
+    left: 10px;
+}
+
+.slider-btn.next {
+    right: 10px;
+}
+
+.slider-hint {
+    margin-top: 12px;
+    font-style: italic;
+    color: #03a9f4;
+    text-shadow: 0 0 6px #81d4fa;
+}
