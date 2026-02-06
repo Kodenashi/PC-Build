@@ -29,6 +29,30 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("ownedTotal").textContent =
             `₱${ownedTotal.toLocaleString(undefined, { minimumFractionDigits: 2 })}`;
     }
+    const slides = document.querySelectorAll(".slide");
+    const prevBtn = document.querySelector(".slider-btn.prev");
+    const nextBtn = document.querySelector(".slider-btn.next");
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+    }
+
+    if (slides.length > 0) {
+        showSlide(currentSlide);
+    }
+
+    nextBtn.addEventListener("click", () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    });
+
+    prevBtn.addEventListener("click", () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    });
+
 
 
     calculateTotal();
